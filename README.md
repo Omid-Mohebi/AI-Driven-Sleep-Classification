@@ -2,6 +2,10 @@
 
 This repository contains a machine learning project aimed at classifying sleep stages based on EEG signal data. The dataset provided consists of 30-second EEG signal spectrograms, preprocessed into 51×59 matrices. The classification challenge is to identify five sleep stages: Wake (0), NREM1 (1), NREM2 (2), NREM3 (3), and REM (4).
 
+**🏆 Competition Winner**: This project won the **AI in Neuroscience Competition** held during the **3rd AI in Health Event** organized by the Neuroscience Committee of the AI in Health Congress. The competition focused on classifying sleep stages using EEG signals, and this solution was recognized as one of the top-performing models.
+
+---
+
 ## Problem Statement
 
 Sleep is a critical physiological process, and understanding its stages has significant implications for neuroscience, health, and medical diagnostics. Accurate classification of sleep stages from EEG signals can aid in diagnosing sleep disorders and improving health monitoring technologies.
@@ -11,6 +15,8 @@ The dataset for this project poses several challenges:
 - **Class Imbalance**: The dataset distribution is highly skewed, making it difficult to train a model that performs well across all classes.
 - **Time-Series Nature**: EEG signals are inherently temporal, but the dataset consists of spectrogram-based snapshots, potentially losing some temporal context.
 - **Dataset Complexity**: Each sample is represented as a 51×59 spectrogram matrix, making preprocessing and model training computationally intensive.
+
+---
 
 ## Dataset Overview
 
@@ -32,6 +38,8 @@ The dataset is organized into five classes corresponding to the sleep stages:
 ### Dataset Source
 
 [Download the dataset here](https://drive.google.com/file/d/1Y2cTYR_t_10NAbznspE5bBjuATPdTgtq)
+
+---
 
 ## Methodology
 
@@ -121,13 +129,23 @@ The micro F1 score on the test set was **0.66**.
 - **Imbalanced Dataset**: Despite balancing, the model struggled with minority classes like NREM1 and REM.
 - **High Variance**: Overfitting was observed, necessitating further regularization or data augmentation.
 
+---
+
 ## Conclusion
 
-This project demonstrates the feasibility of classifying sleep stages from EEG spectrogram data using deep learning. Future work could involve:
+This project demonstrates the feasibility of classifying sleep stages from EEG spectrogram data using deep learning. It was developed as part of the **AI in Neuroscience Competition** during the **3rd AI in Health Event**, where it was recognized as a winning solution. The competition, organized by the Neuroscience Committee of the AI in Health Congress, aimed to advance the application of AI in neuroscience and health diagnostics.
+
+**Winning this competition has provided opportunities for collaboration with leading research centers, including:**
+- **Cognitive Neuroscience Laboratory**, Department of Cognitive Sciences, Convergent Technologies Research Institute, Sharif University of Technology.
+- **National Brain Mapping Center**, Iran University of Medical Sciences.
+
+### Future Work
 
 1. Leveraging temporal dependencies using Recurrent Neural Networks (RNNs) or Transformer-based models.
 2. Augmenting the dataset with synthetic samples to address class imbalance.
 3. Exploring ensemble methods to improve robustness.
+
+---
 
 ## How to Run
 
@@ -145,5 +163,4 @@ This project demonstrates the feasibility of classifying sleep stages from EEG s
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
 
-
-
+---
