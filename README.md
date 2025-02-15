@@ -162,5 +162,3 @@ This project demonstrates the feasibility of classifying sleep stages from EEG s
 ---
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
-
----
